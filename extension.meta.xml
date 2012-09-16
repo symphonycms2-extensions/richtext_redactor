@@ -3,7 +3,7 @@
 	<name>Rich Text (Redactor) Text Formatter</name>
 	<description>WYSIWYG for your text areas</description>
 	<repo type="github">https://github.com/remie/richtext_redactor</repo>
-	<url type="discuss">http://symphony-cms.com/discuss/thread/404/</url>
+	<url type="discuss">http://symphony-cms.com/discuss/thread/92884/</url>
 	<types>
 		<type>Text Formatters</type>
 	</types>

@@ -29,6 +29,7 @@
 			if(!in_array($callback['context']['page'], array('new', 'edit'))) return;
 			
 			Administration::instance()->Page->addStylesheetToHead(URL . '/extensions/richtext_redactor/lib/redactor.css', 'screen', 200);
+			Administration::instance()->Page->addStylesheetToHead(URL . '/extensions/richtext_redactor/assets/redactor.css', 'screen', 210);
 			Administration::instance()->Page->addScriptToHead(URL . '/extensions/richtext_redactor/lib/jquery.redactor.js', 200);
 			Administration::instance()->Page->addScriptToHead(URL . '/extensions/richtext_redactor/lib/redactor.min.js', 201);
 			Administration::instance()->Page->addScriptToHead(URL . '/extensions/richtext_redactor/assets/redactor.publish.js', 202);

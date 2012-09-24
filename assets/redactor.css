@@ -1,0 +1,23 @@
+.redactor_editor ul {
+    list-style: disc;
+}
+
+.redactor_editor ul ul {
+    list-style: circle;
+}
+
+.redactor_editor ul ul ul {
+    list-style: square;
+}
+
+.redactor_editor ol {
+    list-style: decimal;
+}
+
+.redactor_editor ol ol {
+    list-style: lower-alpha;
+}
+
+.redactor_editor ol ol ol {
+    list-style: lower-roman;
+}

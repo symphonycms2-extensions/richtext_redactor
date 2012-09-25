@@ -13,7 +13,9 @@
 		}
 		
 		function run($string){
-			return htmlentities($string);
+			$string = str_replace('&nbsp;', '&#160;', $string);
+	        $string = preg_replace('/<(img|hr|br|link|meta|input|param|base|area|meta)((s+w+(s*=s*("[^"]*"|"[^"]*"|w+))?)*)s*>/', '<$1$2 />', $string);
+	        return $string;
 		}
 	}
 ?>

@@ -5,8 +5,8 @@
 		function about() {
 			return array(
 						 'name' => 'Rich Text (Redactor)',
-						 'version' => '0.9.0',
-						 'release-date' => '2012-09-16',
+						 'version' => '1.0.0',
+						 'release-date' => '2012-09-28',
 						 'author' => array('name' => 'Remie Bolte',
 										   'website' => 'https://github.com/remie')
 				 		);

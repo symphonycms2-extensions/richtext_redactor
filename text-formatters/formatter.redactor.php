@@ -2,7 +2,7 @@
 
 	Class formatterredactor extends TextFormatter{
 		
-		function about(){
+		function about() {
 			return array(
 						 'name' => 'Rich Text (Redactor)',
 						 'version' => '0.9.0',
@@ -12,10 +12,10 @@
 				 		);
 		}
 		
-		function run($string){
+		function run($string) {
 			$string = str_replace('&nbsp;', '&#160;', $string);
 			$string = preg_replace('/<(img|hr|br|link|meta|input|param|base|area|meta)((\s+\w+(\s*=\s*("[^"]*"|\'[^\']*\'|\w+))?)*)\s*>/', '<$1$2/>', $string);
-			return $string;
+	        return $string;
 		}
 	}
 ?>

@@ -1,8 +1,8 @@
 # Rich Text Formatter (Redactor)
 
-* Version: 1.0.0
+* Version: 1.1.0
 * Author: Remie Bolte <http://github.com/remie>
-* Build Date: 2012-09-28
+* Build Date: 2012-09-30
 * Requirements: Symphony 2.3
 
 ## Installation
@@ -20,6 +20,11 @@ You will need to alter your .htaccess file to allow your webserver to expose the
 Unfortunately, the RedactorJS editor does not output strict XHTML. This means that the output was formatted prior to saving. The process of translating HTML to XHTML might cause issues. If this happens, please use the HTML formatting mode to adjust the output manually.
 
 ## Version History
+
+### 1.1.0
+
+* Implementing redactor options
+* Implementing redactor preferences (file & image upload storage location)
 
 ### 1.0.0
 

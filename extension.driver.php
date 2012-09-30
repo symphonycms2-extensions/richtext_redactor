@@ -392,16 +392,22 @@
 			$buttons = $context['settings']['redactor']['buttons'];
 			if(isset($buttons)) {
 				$context['settings']['redactor']['buttons'] = implode(',', $buttons);
+			} else {
+				$context['settings']['redactor']['buttons'] = '';
 			}
 
 			$airbuttons = $context['settings']['redactor']['airbuttons'];
 			if(isset($airbuttons)) {
 				$context['settings']['redactor']['airbuttons'] = implode(',', $airbuttons);
+			} else {
+				$context['settings']['redactor']['airbuttons'] = '';
 			}
 
 			$allowedTags = $context['settings']['redactor']['allowedtags'];
 			if(isset($allowedTags)) {
 				$context['settings']['redactor']['allowedtags'] = implode(',', $allowedTags);
+			} else {
+				$context['settings']['redactor']['allowedtags'] = '';
 			}
 		}
 	}

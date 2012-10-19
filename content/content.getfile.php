@@ -10,7 +10,13 @@ if(file_exists(Symphony::Configuration()->get('filepath','redactor') . '/' . $na
 
 if(isset($path)) {
 	try {
-		$type = mime_content_type($path);
+		if (function_exists('finfo_open')) {
+			$finfo = finfo_open(FILEINFO_MIME_TYPE);
+			$type = finfo_file($finfo, $path);
+			finfo_close($finfo);
+		} else {
+			$type = mime_content_type($path);
+		}
 		header('Content-Type: ' . $type);
 		readfile($path);
 	} catch (Exception $e) {

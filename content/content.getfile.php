@@ -87,13 +87,7 @@ if(!function_exists('mime_content_type')) {
 
 if(isset($path)) {
 	try {
-		if (function_exists('finfo_open')) {
-			$finfo = finfo_open(FILEINFO_MIME_TYPE);
-			$type = finfo_file($finfo, $path);
-			finfo_close($finfo);
-		} else {
-			$type = mime_content_type($path);
-		}
+		$type = mime_content_type($path);
 		header('Content-Type: ' . $type);
 		readfile($path);
 	} catch (Exception $e) {

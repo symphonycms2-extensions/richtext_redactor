@@ -10,8 +10,8 @@ $result = array();
 if(isset($files) && isset($files['filelist'])) {
 	foreach($files['filelist'] as $file) {
 		$result[] = array(
-			'thumb' => URL . '/symphony/extension/richtext_redactor/getfile/?name=' . $file,
-			'image' => URL . '/symphony/extension/richtext_redactor/getfile/?name=' . $file,
+			'thumb' => '/symphony/extension/richtext_redactor/getfile/?name=' . $file,
+			'image' => '/symphony/extension/richtext_redactor/getfile/?name=' . $file,
 			'title' => $file
 		);
 	}

@@ -1,3 +1,14 @@
+----
+
+> ATTENTION!
+> ==========
+> 
+> This project is no longer actively maintained.
+> If you do intend to use this extension, please make sure to review https://github.com/remie/richtext_redactor/issues/16
+> 
+
+----
+
 # Rich Text Formatter (Redactor)
 
 * Version: 1.1.1

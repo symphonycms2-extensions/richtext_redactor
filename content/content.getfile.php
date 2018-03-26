@@ -2,6 +2,9 @@
 
 $name = $_GET["name"];
 
+if(!substr_count($name, 'redactor'))
+	die("NO DIRECT ACCESS!");
+
 if(file_exists(Symphony::Configuration()->get('filepath','redactor') . '/' . $name)) {
 	$path = Symphony::Configuration()->get('filepath','redactor') . '/' . $name;
 } else if(file_exists(Symphony::Configuration()->get('imagepath','redactor') . '/' . $name)) {

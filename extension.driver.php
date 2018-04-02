@@ -314,14 +314,14 @@
 		                    $input = Widget::Input('settings[redactor][filepath]', Symphony::Configuration()->get('filepath', 'redactor'), 'text');
 		                    $label->setValue(__('File upload location') . $input->generate());
 		                    $div->appendChild($label);
-		    		$div->appendChild(new XMLElement('span',"The directory where uploaded files are stored (default: WORKSPACE/redactor/files)", array("class"=>"help")));
+		    		$div->appendChild(new XMLElement('span',__('The directory where uploaded files are stored (default: WORKSPACE/redactor/files)'), array("class"=>"help")));
 
 		            // File Upload location
 		    		$label = Widget::Label();
 		                    $input = Widget::Input('settings[redactor][imagepath]', Symphony::Configuration()->get('imagepath', 'redactor'), 'text');
 		                    $label->setValue(__('Image upload location') . $input->generate());
 		                    $div->appendChild($label);
-		    		$div->appendChild(new XMLElement('span',"The directory where uploaded images are stored (default: WORKSPACE/redactor/images)", array("class"=>"help")));
+		    		$div->appendChild(new XMLElement('span',__('The directory where uploaded images are stored (default: WORKSPACE/redactor/images)'), array("class"=>"help")));
 
 
 				$columns->appendChild($div);
